@@ -53,7 +53,8 @@ struct HeathCharacterView: View {
                     .padding(.bottom, 10)
                     .animation(.easeInOut(duration: 1), value: blueper)
             }
-            Image("HealthCharacter")
+            
+            Image(viewModel.workouts.isEmpty ? "NoHealth" : "HealthCharacter")
         }
         .frame(width: 160, height: 150)
         .background(Color("CharBack"))

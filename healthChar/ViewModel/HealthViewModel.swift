@@ -287,5 +287,23 @@ extension HealthViewModel {
             print("Failed to fetch custom workouts: \(error)")
         }
     }
+    
+    func loadGoal() {
+        let context = persistentContainer.viewContext
+        let request: NSFetchRequest<CustomWorkoutEntity> = CustomWorkoutEntity.fetchRequest()
+        
+        do {
+            let results = try context.fetch(request)
+            customWorkouts = Dictionary(uniqueKeysWithValues: results.compactMap { result -> (UUID, CustomWorkout)? in
+                guard let uuid = UUID(uuidString: result.uuid ?? "") else {
+                    return nil
+                }
+                let parts = result.parts?.split(separator: ",").compactMap { Part(rawValue: String($0)) } ?? []
+                return (uuid, CustomWorkout(parts: parts, comment: result.comment ?? ""))
+            })
+        } catch {
+            print("Failed to fetch goal: \(error)")
+        }
+    }
 }
 

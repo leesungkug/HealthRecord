@@ -11,9 +11,6 @@
 		1E6B256C2BBF80F20061C356 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6B256B2BBF80F20061C356 /* HomeView.swift */; };
 		1E6B256E2BBF80F30061C356 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E6B256D2BBF80F30061C356 /* Assets.xcassets */; };
 		1E6B25712BBF80F30061C356 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E6B25702BBF80F30061C356 /* Preview Assets.xcassets */; };
-		1E6B257B2BBF80F30061C356 /* healthCharTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6B257A2BBF80F30061C356 /* healthCharTests.swift */; };
-		1E6B25852BBF80F30061C356 /* healthCharUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6B25842BBF80F30061C356 /* healthCharUITests.swift */; };
-		1E6B25872BBF80F30061C356 /* healthCharUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6B25862BBF80F30061C356 /* healthCharUITestsLaunchTests.swift */; };
 		1E6B25C52BC3D1FD0061C356 /* HealthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6B25C42BC3D1FD0061C356 /* HealthViewModel.swift */; };
 		1EDF4F052BC8CBD1009AA4A1 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDF4F042BC8CBD1009AA4A1 /* HealthKitManager.swift */; };
 		1EDF4F082BC918C3009AA4A1 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDF4F072BC918C3009AA4A1 /* CalendarView.swift */; };
@@ -53,10 +50,7 @@
 		1E6B256D2BBF80F30061C356 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E6B25702BBF80F30061C356 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1E6B25762BBF80F30061C356 /* healthCharTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = healthCharTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E6B257A2BBF80F30061C356 /* healthCharTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = healthCharTests.swift; sourceTree = "<group>"; };
 		1E6B25802BBF80F30061C356 /* healthCharUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = healthCharUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E6B25842BBF80F30061C356 /* healthCharUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = healthCharUITests.swift; sourceTree = "<group>"; };
-		1E6B25862BBF80F30061C356 /* healthCharUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = healthCharUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1E6B25C32BC3CFDF0061C356 /* healthChar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = healthChar.entitlements; sourceTree = "<group>"; };
 		1E6B25C42BC3D1FD0061C356 /* HealthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthViewModel.swift; sourceTree = "<group>"; };
 		1EDF4F042BC8CBD1009AA4A1 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
@@ -102,8 +96,6 @@
 			isa = PBXGroup;
 			children = (
 				1E6B25682BBF80F20061C356 /* healthChar */,
-				1E6B25792BBF80F30061C356 /* healthCharTests */,
-				1E6B25832BBF80F30061C356 /* healthCharUITests */,
 				1E6B25672BBF80F20061C356 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -139,23 +131,6 @@
 				1E6B25702BBF80F30061C356 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		1E6B25792BBF80F30061C356 /* healthCharTests */ = {
-			isa = PBXGroup;
-			children = (
-				1E6B257A2BBF80F30061C356 /* healthCharTests.swift */,
-			);
-			path = healthCharTests;
-			sourceTree = "<group>";
-		};
-		1E6B25832BBF80F30061C356 /* healthCharUITests */ = {
-			isa = PBXGroup;
-			children = (
-				1E6B25842BBF80F30061C356 /* healthCharUITests.swift */,
-				1E6B25862BBF80F30061C356 /* healthCharUITestsLaunchTests.swift */,
-			);
-			path = healthCharUITests;
 			sourceTree = "<group>";
 		};
 		1EDF4F062BC910F9009AA4A1 /* View */ = {
@@ -344,7 +319,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E6B257B2BBF80F30061C356 /* healthCharTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,8 +326,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E6B25872BBF80F30061C356 /* healthCharUITestsLaunchTests.swift in Sources */,
-				1E6B25852BBF80F30061C356 /* healthCharUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +476,7 @@
 				DEVELOPMENT_TEAM = AQCS8SYVV6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "울끈불끈";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app need this permission";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This app need this permission";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -539,6 +512,7 @@
 				DEVELOPMENT_TEAM = AQCS8SYVV6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "울끈불끈";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app need this permission";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This app need this permission";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
